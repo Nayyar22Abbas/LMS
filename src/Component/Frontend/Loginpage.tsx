@@ -19,6 +19,7 @@ export const LoginPage: React.FC = () => {
     }
   };
 
+  
   const handleAdminLogin = () => {
     // Simulating an API call to validate credentials
     if (username === "admin" && password === "1234") {
