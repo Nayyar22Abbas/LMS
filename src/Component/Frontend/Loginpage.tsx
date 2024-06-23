@@ -10,24 +10,15 @@ export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Simulating an API call to validate credentials
-    if (username === "Ahsan ali" && password === "1234") {
-      setLoggedIn(true);
-      navigate('/dashboard');
-    } else {
-      alert('Incorrect username or password');
-    }
+
+      navigate('/Homepage');
+  
   };
 
   
   const handleAdminLogin = () => {
-    // Simulating an API call to validate credentials
-    if (username === "admin" && password === "1234") {
-      setLoggedIn(true);
-      navigate('/dashboard/AdminDashboard');
-    } else {
-      alert('Incorrect admin username or password');
-    }
+    
+   
   };
 
   return (
