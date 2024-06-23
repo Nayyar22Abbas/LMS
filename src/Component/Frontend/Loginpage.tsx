@@ -11,16 +11,12 @@ export const LoginPage: React.FC = () => {
 
   const handleLogin = () => {
 
-      navigate('/Homepage');
-  
-  };
+    navigate('/Homepage');
 
-  
+  };
   const handleAdminLogin = () => {
-    
-   
-  };
 
+  };
   return (
     <div
       className="login-container"
@@ -32,7 +28,7 @@ export const LoginPage: React.FC = () => {
       }}
     >
       <div className="login-form" >
-        <img src="lib2.jpg" style={{marginLeft:'30%' }} alt="Air University Logo" width={150} height={120} />
+        <img src="lib2.jpg" style={{ marginLeft: '30%' }} alt="Air University Logo" width={150} height={120} />
         <h2>Welcome to LMS!</h2>
         <div>
           <label>Username:</label>
@@ -52,7 +48,7 @@ export const LoginPage: React.FC = () => {
             className="login-form-input"
           />
         </div>
-        <button onClick={handleLogin} className="login-form-button" style={{marginBottom:'10px'}}>
+        <button onClick={handleLogin} className="login-form-button" style={{ marginBottom: '10px' }}>
           Login
         </button>
         {loggedIn && <p className="login-form-message">Welcome, {username}!</p>}

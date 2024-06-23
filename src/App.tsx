@@ -10,9 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-        
-         
-    
     <Router>
       {/* <Route  path="/" Component={Loginpage} /> */}
       <Routes>
@@ -21,7 +18,7 @@ function App() {
         <Route path="/Homepage" element={<Homepage />} />
       </Routes>
     </Router>
-  
+
   )
 }
 
