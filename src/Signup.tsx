@@ -90,10 +90,29 @@ export const Signup: React.FC = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f8f9fa', padding: '20px' }}>
-      <div style={{ backgroundColor: '#d3d3d3', padding: '20px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width: '100%', maxWidth: '500px' }}>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      backgroundColor: '#f8f9fa',
+      padding: '20px', marginTop: '10%'
+    }}>
+      <div style={{
+        backgroundColor: '#d3d3d3',
+        padding: '20px',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        width: '100%',
+        maxWidth: '500px'
+      }}>
         <Form onSubmit={handleSubmit}>
-          <h1 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '32px', color: '#007bff' }}>Registration Form</h1>
+          <h1 style={{
+            textAlign: 'center',
+            marginBottom: '40px',
+            fontSize: '32px',
+            color: '#007bff'
+          }}>Registration Form</h1>
           <Form.Group style={{ marginBottom: '20px' }}>
             <Form.Label>Student User Name</Form.Label>
             <Form.Control
@@ -126,7 +145,9 @@ export const Signup: React.FC = () => {
               onChange={handleChange}
               isInvalid={!!errors.lastName}
             />
-            <Form.Control.Feedback type="invalid" style={{ color: 'red' }}>{errors.lastName}</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid" style={{
+               color: 'red'
+                }}>{errors.lastName}</Form.Control.Feedback>
           </Form.Group>
           <Form.Group style={{ marginBottom: '20px' }}>
             <Form.Label>Student ID</Form.Label>
@@ -204,7 +225,18 @@ export const Signup: React.FC = () => {
             />
             <Form.Control.Feedback type="invalid" style={{ color: 'red' }}>{errors.studentPhoneNo}</Form.Control.Feedback>
           </Form.Group>
-          <Button style={{ width: '100%', padding: '12px', backgroundColor: '#007bff', color: '#ffffff', border: 'none', borderRadius: '5px', cursor: 'pointer', transition: 'background-color 0.3s', fontSize: '16px' }} type="submit">
+          <Button style={{
+            width: '100%',
+            padding: '12px',
+            backgroundColor: '#007bff',
+            color: '#ffffff',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s',
+            fontSize: '16px'
+          }}
+            type="submit">
             Submit
           </Button>
         </Form>
