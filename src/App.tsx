@@ -11,15 +11,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
-      {/* <Route  path="/" Component={Loginpage} /> */}
       <Routes>
-        {/* <Route  path="/dashboard" Component={Loginpage} /> */}
         <Route path="" element={<LoginPage />} />
         <Route path="/Homepage" element={<Homepage />} />
       </Routes>
     </Router>
-
   )
 }
-
 export default App;

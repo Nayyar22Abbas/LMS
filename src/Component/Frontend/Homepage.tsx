@@ -4,26 +4,41 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 export const Homepage = () => {
   return (
-
-    <div className='main-div' style={{ backgroundColor: '#e0e0e0', minHeight: '100vh', borderRadius: '20px', padding: '20px' }}>
-      <div className='navbar' style={{ backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px' }}>
+    <div className='main-div' style={{
+      backgroundColor: '#e0e0e0',
+      minHeight: '100vh',
+      borderRadius: '20px',
+      padding: '20px'
+    }}>
+      <div className='navbar' style={{
+        backgroundColor: 'white',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '10px'
+      }}>
         <h1 style={{ margin: '0' }}>Welcome To LMS</h1>
         <Nav variant="underline" defaultActiveKey="/home">
           <Nav.Item>
-            <Nav.Link href="/home">Active</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1">Option 2</Nav.Link>
+            <Nav.Link eventKey="link-1">Categories</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="disabled" disabled>
-              Disabled
+            <Nav.Link eventKey="logout" >
+              Logout
             </Nav.Link>
           </Nav.Item>
         </Nav>
       </div>
+      <div className='cards' style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '20px',
+        marginTop: '25%',
 
-      <div className='cards' style={{ display: 'flex', justifyContent: 'space-between', gap: '20px', marginTop: '25%' }}>
+      }}>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="holder.js/100px180" />
           <Card.Body>
@@ -58,7 +73,12 @@ export const Homepage = () => {
         </Card>
       </div>
 
-      <div style={{ marginTop: '20px', textAlign: 'center', borderTop: '1px solid #ccc', paddingTop: '10px' }}>
+      <div style={{
+        marginTop: '20px',
+        textAlign: 'center',
+        borderTop: '1px solid #ccc',
+        paddingTop: '10px'
+      }}>
         <p>© 2024 Your Company Name. All rights reserved.</p>
       </div>
     </div>
